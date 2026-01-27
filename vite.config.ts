@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
+import { resolve } from "path";
 
 export default defineConfig({
   publicDir: "public",
@@ -13,7 +14,12 @@ export default defineConfig({
         drop_debugger: true,
       },
     },
-    rollupOptions: {},
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        legal: resolve(__dirname, "legal.html"),
+      },
+    },
   },
   plugins: [
     ViteImageOptimizer({
