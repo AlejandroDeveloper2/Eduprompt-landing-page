@@ -1,0 +1,125 @@
+/** Common hero styles */
+.hero {
+  width: 100%;
+  height: 470px;
+  background-image:
+    linear-gradient(var(--primary-opacity-07), var(--primary-opacity-07)),
+    url(../assets/eduprompt-background.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  gap: var(--spacing-2xl);
+  position: relative;
+
+  @media (min-width: 768px) {
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-width: 1240px) {
+    padding: var(--spacing-4xl) var(--spacing-null);
+  }
+}
+
+.hero__logo {
+  width: 200px;
+  height: 91px;
+
+  @media (min-width: 768px) {
+    width: 240px;
+    height: 109px;
+  }
+
+  @media (min-width: 1240px) {
+    width: 300px;
+    height: 136px;
+  }
+}
+
+.hero__title,
+.hero__description {
+  color: var(--white);
+  font-weight: 500;
+  font-size: var(--font-size-huge);
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-extra-huge);
+  }
+}
+
+.hero__description {
+  font-weight: 400;
+  font-size: var(--font-size-xl);
+
+  @media (min-width: 768px) {
+    max-width: 1240px;
+  }
+}
+
+.hero__actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    width: auto;
+    flex-direction: row;
+  }
+}
+
+.hero__btn__scroll-down {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-400);
+  border-radius: var(--radius-rounded);
+  border: 4px solid var(--white);
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -25px;
+  svg {
+    width: 24px;
+    height: 24px;
+    transition: transform ease 0.6s;
+  }
+  text-decoration: none;
+  transition: background-color ease-in 0.6s;
+  &:active {
+    background-color: var(--primary-200);
+    svg {
+      transform: translateY(5px);
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+    bottom: -30px;
+  }
+
+  @media (min-width: 1300px) {
+    &:hover {
+      background-color: var(--primary-200);
+      svg {
+        transform: translateY(5px);
+      }
+    }
+  }
+}

@@ -1,0 +1,303 @@
+.page-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-null);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section-container {
+  width: 100%;
+  background-color: var(--white);
+}
+
+.section-container--neutral {
+  background-color: var(--neutral-00);
+}
+.section-container--primary {
+  background: var(--primary-gradient);
+  h2,
+  h3,
+  p {
+    color: var(--white);
+  }
+}
+
+.page-content__section {
+  width: 100%;
+  padding: 52px var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3xl);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  @media (min-width: 1300px) {
+    padding: 52px var(--spacing-null);
+    max-width: 1240px;
+  }
+}
+
+.page-content__section__title,
+.page-content__section__subtitle,
+.page-content__section__grid__card__title,
+.page-content__section__grid__step-card__title {
+  color: var(--primary-400);
+  font-weight: bold;
+  text-align: center;
+  font-size: var(--font-size-huge);
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-extra-huge);
+  }
+}
+
+.page-content__section__subtitle {
+  color: var(--neutral-800);
+  font-weight: 400;
+  font-size: var(--font-size-lg);
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-xl);
+  }
+}
+
+.page-content__section__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-3xl);
+}
+
+.page-content__section__grid__card,
+.page-content__section__grid__resource-card,
+.page-content__section__grid__step-card,
+.page-content__section__grid__benefit-card,
+.page-content__section__grid__plan-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  background-color: var(--white);
+  box-shadow: 0 0 4px var(--black-opacity-02);
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: var(--radius-lg);
+  transition: transform ease 0.6s;
+
+  &:active {
+    transform: translateY(-5px);
+    svg {
+      transform: rotate(5deg);
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: var(--spacing-4xl) var(--spacing-lg);
+  }
+
+  @media (min-width: 1300px) {
+    &:hover {
+      transform: translateY(-5px);
+      svg {
+        transform: rotate(5deg);
+      }
+    }
+  }
+}
+
+.page-content__section__grid__card__icon,
+.page-content__section__grid__resource-card__icon,
+.page-content__section__grid__benefit-card__icon {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.6s ease;
+
+  @media (min-width: 768px) {
+    width: 52px;
+    height: 52px;
+  }
+}
+.page-content__section__grid__card__title {
+  font-size: var(--font-size-4xl);
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-5xl);
+  }
+}
+
+.page-content__section__grid__card__description {
+  color: var(--neutral-800);
+  text-align: left;
+  font-weight: 400;
+  font-size: var(--font-size-sm);
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-md);
+  }
+}
+
+.page-content__section__grid__resource-card {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page-content__section__grid__resource-card__icon {
+  width: 36px;
+  height: 36px;
+
+  @media (min-width: 768px) {
+    width: 48px;
+    height: 48px;
+  }
+}
+.page-content__section__grid__resource-card__title {
+  color: var(--neutral-800);
+  text-align: left;
+  font-weight: 500;
+  font-size: var(--font-size-lg);
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-xl);
+  }
+}
+
+.page-content__section__grid__step-card {
+  box-shadow: none;
+}
+
+.page-content__section__grid__step-card__indicator {
+  width: 80px;
+  height: 80px;
+  background-color: var(--primary-400);
+  display: grid;
+  place-content: center;
+  border-radius: var(--radius-rounded);
+  box-shadow: inset 0 0 10px 4px var(--black-opacity-02);
+}
+.page-content__section__grid__step-card__indicator__label {
+  color: var(--white);
+  text-align: center;
+  font-weight: bold;
+  font-size: var(--font-size-4xl);
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-5xl);
+  }
+}
+.page-content__section__grid__step-card__title {
+  color: var(--neutral-800);
+  font-size: var(--font-size-4xl);
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-5xl);
+  }
+}
+.page-content__section__grid__step-card__description {
+  color: var(--neutral-800);
+  font-weight: 400;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  @media (min-width: 768px) {
+    font-size: var(--font-size-md);
+  }
+}
+
+.page-content__section__grid__benefit-card {
+  background-color: var(--black-opacity-02);
+}
+
+.page-content__section__grid__benefit-card__title {
+  font-weight: bold;
+  font-size: var(--font-size-4xl);
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-5xl);
+  }
+}
+
+.page-content__section__grid__benefit-card__description {
+  font-weight: 400;
+  font-size: var(--font-size-sm);
+  text-align: left;
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-md);
+  }
+}
+
+/** PLAN CARD STYLES */
+.page-content__section__grid__plan-card--primary {
+  background: var(--primary-gradient);
+  h3,
+  .page-content__section__grid__plan-card__name,
+  .page-content__section__grid__plan-card__price,
+  .page-content__section__grid__plan-card__price-details,
+  .page-content__section__grid__plan-card__features__li {
+    color: var(--white);
+  }
+  .page-content__section__grid__plan-card__features__li {
+    &::before {
+      color: var(--white);
+    }
+  }
+}
+.page-content__section__grid__plan-card--neutral {
+  background: var(--neutral-00);
+}
+.page-content__section__grid__plan-card {
+  justify-content: center;
+}
+.page-content__section__grid__plan-card__name,
+.page-content__section__grid__plan-card__price {
+  color: var(--primary-400);
+  font-size: var(--font-size-4xl);
+  text-align: center;
+  font-weight: bold;
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-5xl);
+  }
+}
+
+.page-content__section__grid__plan-card__price {
+  font-size: var(--font-size-huge);
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-extra-huge);
+  }
+}
+.page-content__section__grid__plan-card__price-details {
+  color: var(--neutral-600);
+  font-size: var(--font-size-lg);
+  text-align: center;
+  font-weight: 300;
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-xl);
+  }
+}
+.page-content__section__grid__plan-card__features {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+}
+
+.page-content__section__grid__plan-card__features__li {
+  display: inline-flex;
+  justify-content: flex-start;
+  gap: var(--spacing-xs);
+  &::before {
+    content: "✓";
+    color: var(--primary-400);
+    font-weight: bold;
+  }
+}

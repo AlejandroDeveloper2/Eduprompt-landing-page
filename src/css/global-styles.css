@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  /** Colors"*/
+  --white: #fff;
+  --back: #000;
+
+  /** Primary Colors */
+  --primary-25: #5bf1bf;
+  --primary-50: #43efb6;
+  --primary-100: #2cedad;
+  --primary-200: #14eba4;
+  --primary-300: #12d393;
+  --primary-400: #10b981;
+  --primary-500: #0d9b6c;
+  --primary-600: #0b7f58;
+  --primary-700: #096345;
+  --primary-800: #064631;
+  --primary-900: #042a1e;
+
+  /** Neutral Colors */
+  --neutral-00: #f1f2f4;
+  --neutral-25: #e3e5e8;
+  --neutral-50: #d5d8dd;
+  --neutral-100: #c6cad2;
+  --neutral-200: #b8bdc6;
+  --neutral-300: #aab0bb;
+  --neutral-400: #9ca3af;
+  --neutral-500: #868e9d;
+  --neutral-600: #70798a;
+  --neutral-700: #5d6574;
+  --neutral-800: #4b525d;
+  --neutral-900: #393e47;
+  --neutral-1000: #272a30;
+
+  /** Opacity */
+  --black-opacity-02: rgba(0, 0, 0, 0.2);
+  --primary-opacity-07: rgba(16, 185, 129, 0.9);
+
+  /**Gradient*/
+  --primary-gradient: linear-gradient(
+    180deg,
+    rgba(16, 185, 129, 1) 47%,
+    rgba(14, 164, 115, 1) 80%
+  );
+
+  /** Spacing */
+  --spacing-null: 0px;
+  --spacing-4xs: 2px;
+  --spacing-3xs: 4px;
+  --spacing-2xs: 6px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 20px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 28px;
+  --spacing-3xl: 32px;
+  --spacing-4xl: 36px;
+
+  /** Font family */
+  --font-family: "Outfit", sans-serif;
+
+  /** Radius */
+  --radius-null: 0px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-pilled: 50px;
+  --radius-rounded: 100%;
+
+  /** Font sizes */
+  --font-size-2xs: 10px;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 22px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 26px;
+  --font-size-5xl: 28px;
+  --font-size-huge: 32px;
+  --font-size-extra-huge: 36px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /** Firefox */
+  scrollbar-width: 15px;
+  scrollbar-color: var(--primary-400) var(--white);
+}
+
+body {
+  width: 100%;
+  background-color: var(--white);
+  overflow-x: hidden;
+  font-family: var(--font-family);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-400);
+  border-radius: var(--radius-pilled);
+  border: 3px solid var(--white);
+}
