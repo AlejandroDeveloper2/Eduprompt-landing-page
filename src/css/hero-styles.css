@@ -81,6 +81,7 @@
   right: 0;
   margin: auto;
   bottom: -25px;
+  z-index: 1;
   svg {
     width: 24px;
     height: 24px;
