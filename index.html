@@ -127,10 +127,6 @@
     <link rel="stylesheet" type="text/css" href="./src/css/footer-styles.css" />
     <link rel="stylesheet" type="text/css" href="./src/css/hero-styles.css" />
     <link rel="stylesheet" type="text/css" href="./src/css/button-styles.css" />
-
-    <!-- Preconnect to external domains (si usas CDNs o APIs externas) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
   </head>
   <body>
     <app-navigation></app-navigation>
@@ -144,7 +140,7 @@
         talleres, exámenes y más. La herramienta definitiva para docentes
         modernos.
       </strong>
-      <menu class="hero__actions">
+      <div class="hero__actions">
         <a class="button button--neutral button--sm-full" href="#">
           <svg
             class="button__icon"
@@ -190,23 +186,17 @@
 
           <span class="button__span"> Ver cómo funciona </span>
         </a>
-      </menu>
-      <button class="hero__btn__scroll-down" title="Empezar a leer">
-        <a href="#features">
-          <svg
-            viewBox="0 0 48 48"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M10.614 17.426C10.7275 17.1519 10.9198 16.9176 11.1665 16.7528C11.4132 16.5879 11.7033 16.5 12 16.5H36C36.2965 16.5003 36.5862 16.5884 36.8326 16.7532C37.0791 16.9181 37.2711 17.1522 37.3846 17.4262C37.498 17.7001 37.5277 18.0015 37.4699 18.2923C37.4121 18.5831 37.2695 18.8502 37.06 19.06L25.06 31.06C24.7787 31.3409 24.3975 31.4987 24 31.4987C23.6025 31.4987 23.2212 31.3409 22.94 31.06L10.94 19.06C10.7302 18.8504 10.5873 18.5833 10.5292 18.2924C10.4712 18.0016 10.5007 17.7001 10.614 17.426Z"
-              fill="white"
-            />
-          </svg>
-        </a>
-      </button>
+      </div>
+      <a class="hero__btn__scroll-down" title="Empezar a leer" href="#features">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M10.614 17.426C10.7275 17.1519 10.9198 16.9176 11.1665 16.7528C11.4132 16.5879 11.7033 16.5 12 16.5H36C36.2965 16.5003 36.5862 16.5884 36.8326 16.7532C37.0791 16.9181 37.2711 17.1522 37.3846 17.4262C37.498 17.7001 37.5277 18.0015 37.4699 18.2923C37.4121 18.5831 37.2695 18.8502 37.06 19.06L25.06 31.06C24.7787 31.3409 24.3975 31.4987 24 31.4987C23.6025 31.4987 23.2212 31.3409 22.94 31.06L10.94 19.06C10.7302 18.8504 10.5873 18.5833 10.5292 18.2924C10.4712 18.0016 10.5007 17.7001 10.614 17.426Z"
+            fill="white"
+          />
+        </svg>
+      </a>
     </section>
     <div class="page-content">
       <!-- Features Section -->

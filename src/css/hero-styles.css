@@ -4,7 +4,7 @@
   height: 470px;
   background-image:
     linear-gradient(var(--primary-opacity-07), var(--primary-opacity-07)),
-    url(../assets/eduprompt-background.png);
+    url(../assets/eduprompt-background.webp);
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;

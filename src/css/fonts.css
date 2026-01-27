@@ -1,0 +1,44 @@
+/* Outfit Light */
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Outfit Regular */
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Outfit Medium */
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Outfit SemiBold */
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Outfit Bold */
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
