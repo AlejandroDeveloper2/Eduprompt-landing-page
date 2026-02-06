@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap (actualiza con tu dominio real)
-Sitemap: https://edupromptapp.up.railway.app/sitemap.xml
+Sitemap: https://eduuprompt.com/sitemap.xml
 
 # Crawl-delay (opcional, ayuda a no sobrecargar el servidor)
 Crawl-delay: 1
